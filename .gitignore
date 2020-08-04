@@ -1,2 +1,2 @@
 # Ignore autoload from vim
-vim/.config/nvim/autoload/*
+nvim/.config/nvim/autoload/*
