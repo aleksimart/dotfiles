@@ -2,6 +2,12 @@
 
 sudo pacman -S stow
 
+#i3 setup for arch
+sudo pacman -S ansible i3  
+git clone https://github.com/justmeandopensource/myi3
+cd myi3
+ansible-playbook -i ansible.cfg setup.yaml   
+
 # vim
 sudo pacman -S neovim wl-clipboard
 
@@ -17,4 +23,4 @@ stow -t ~ nvim
 stow -t ~ zsh
 stow -t ~ i3
 stow -t ~ i3blocks
-
+stow -t ~ add_conf
