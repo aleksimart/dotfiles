@@ -1,6 +1,8 @@
 {
     "signature.target": "float",
     "coc.preferences.hoverTarget": "float",
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFiletypes": ["go"],
     "diagnostic.virtualText": true,
     "suggest.floatEnable": true,
     "languageserver": {
@@ -9,7 +11,10 @@
             "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
             "filetypes": ["go"],
             "initializationOptions": {
-                "usePlaceholders": true
+                "staticcheck": true,
+                "usePlaceholders": true,
+                "completeUnimported": true,
+                "caseSensitiveCompletion": true
             }
         },
         "ccls": {
