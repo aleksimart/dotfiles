@@ -31,3 +31,8 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
+
+" Syntax highlighting enhancements
+source $HOME/.config/nvim/syntax/i3.vim
+" source $HOME/.config/nvim/syntax/java.vim
+

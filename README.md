@@ -4,4 +4,7 @@ All the important dotfiles of my system
 - [x] Configure _**quickscope**_
 - [ ] Configure _**floaterm**_
 - [ ] Change from __**rainbow parantheses**__ __**rainbow**__
-- [ ] Add java syntax 
+- [x] Add java syntax 
+## BUGS TO FIX
+-   [ ] Java syntax doesn't work
+-   [ ] i3 syntax only works if I open the file right away
