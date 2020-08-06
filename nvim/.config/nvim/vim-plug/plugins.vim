@@ -44,6 +44,7 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
 
     " Better navigation inside a file
     Plug 'justinmk/vim-sneak'
+    Plug 'unblevable/quick-scope'
 
     " Some help for me to not to forget the leader functions
     Plug 'liuchengxu/vim-which-key'
