@@ -30,3 +30,4 @@ source $HOME/.config/nvim/plug-config/vim-gitgutter.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/vista.vim
+source $HOME/.config/nvim/plug-config/quickscope.vim
