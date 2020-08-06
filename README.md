@@ -4,9 +4,9 @@ All the important dotfiles of my system
 
 ## TODO
 
-- [x] Configure _**quickscope**_
-- [ ] Configure _**floaterm**_
-- [ ] Change from _**rainbow parentheses**_ to _**rainbow**_
+- [x] Configure **_quickscope_**
+- [ ] Configure **_floaterm_**
+- [ ] Change from **_rainbow parentheses_** to **_rainbow_**
 - [x] Add java syntax
 - [ ] Learn more about coc-action
 
@@ -14,4 +14,4 @@ All the important dotfiles of my system
 
 - [ ] Java syntax doesn't work
 - [ ] i3 syntax only works if I open the file right away
-- [ ] JSON forces having literally no space
+- [x] ~~JSON forces having literally no space~~ (coc-prettier did the job)
