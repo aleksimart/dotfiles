@@ -1,15 +1,46 @@
 {
     "signature.target": "float",
+    // Diagnostics
+    "diagnostic.virtualText": true, // Won't work with codelens if on the same line
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": " ",
+    // Autoformat
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "javascript",
+        "graphql",
+        "html",
+        "yaml",
+        "json",
+        "python",
+        "java",
+        "go"
+    ],
     "coc.preferences.hoverTarget": "float",
     "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnSaveFiletypes": ["go"],
-    "diagnostic.virtualText": true,
+    // Suggestions
     "suggest.floatEnable": true,
+    "suggest.completionItemKindLabels": {
+        "text": "t",
+        "method": "m",
+        "function": ""
+    },
+    // Language Servers
     "languageserver": {
         "golang": {
             "command": "~/go/bin/gopls",
-            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-            "filetypes": ["go"],
+            "rootPatterns": [
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ],
             "initializationOptions": {
                 "staticcheck": true,
                 "usePlaceholders": true,
@@ -19,15 +50,42 @@
         },
         "ccls": {
             "command": "ccls",
-            "filetypes": ["c", "cpp", "objc", "objcpp"],
-            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
             "initializationOptions": {
                 "cache": {
                     "directory": "/tmp/ccls"
                 }
             }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
         }
     },
-    "snippets.userSnippetsDirectory": "~/.config/nvim/snips"
+    // Snippets
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/snips"
+    ]
+    //"snippets.userSnippetsDirectory": "~/.config/nvim/snips",
 }
-
