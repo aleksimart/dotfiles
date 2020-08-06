@@ -6,8 +6,9 @@ All the important dotfiles of my system
 
 - [x] Configure _**quickscope**_
 - [ ] Configure _**floaterm**_
-- [ ] Change from \***\*rainbow parantheses\*\*** to \***\*rainbow\*\***
+- [ ] Change from _**rainbow parentheses**_ to _**rainbow**_
 - [x] Add java syntax
+- [ ] Learn more about coc-action
 
 ## BUGS TO FIX
 
