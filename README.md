@@ -9,7 +9,7 @@ All the important dotfiles of my system
 - [ ] Change from **_rainbow parentheses_** to **_rainbow_**
 - [x] Add java syntax
 - [ ] Learn more about coc-action
-- [ ] Add kitty config to dotfile
+- [ ] Add kitty config to dotfiles
 - [ ] Add fira code installation to _install.sh_
 
 ## BUGS TO FIX
