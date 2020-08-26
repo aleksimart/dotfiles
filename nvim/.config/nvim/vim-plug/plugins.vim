@@ -62,7 +62,10 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     " Vista
     Plug 'liuchengxu/vista.vim'
 
-call plug#end()
+    " Markdown realtime preview
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  } 
+
+    call plug#end()
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *
