@@ -19,8 +19,14 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+# kitty
+sudo pacman -S kitty kitty-terminfo
+# kitty-themes
+git clone --depth 1 git@github.com:dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+
 stow -t ~ nvim
 stow -t ~ zsh
 stow -t ~ i3
 stow -t ~ i3blocks
 stow -t ~ add_conf
+stow -t ~ kitty
