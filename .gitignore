@@ -3,3 +3,6 @@ nvim/.config/nvim/autoload/*
 
 # Ignore kitty-themes because these can be downloaded
 kitty/.config/kitty/kitty-themes
+
+# Ignore .netrwhist
+nvim/.config/nvim/.netrwhist
