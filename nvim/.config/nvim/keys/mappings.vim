@@ -49,19 +49,10 @@ nmap <CR> o<Esc>
 "nnoremap <Leader>O O<Esc>^Da
 
 "let mapleader=" "
-noremap <leader>y "+y
-noremap <leader>p "+p
-noremap <leader>P "+P
-noremap <leader>P "+P
-
-" Buffer
-nnoremap <leader>b[ :bp<CR>
-nnoremap <leader>b] :bn<CR>
-nnoremap <leader>b{ :bf<CR>
-nnoremap <leader>b} :bl<CR>
-
-nnoremap <leader>T :Explore<CR> 
-nnoremap <leader>v :vsplit<CR>
+" noremap <leader>y "+y
+" noremap <leader>p "+p
+" noremap <leader>P "+P
+" noremap <leader>P "+P
 
 " Tabs
 " nnoremap <A-h> gT

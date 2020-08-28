@@ -6,7 +6,6 @@ syntax enable                           " Enables syntax highlighing but doesn't
 set hidden                              " Required to keep multiple buffers open and doesn't require to save first before switching 
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
-" set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 
 set ruler              			            " Show the cursor position all the time
