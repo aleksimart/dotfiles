@@ -36,7 +36,7 @@ let g:which_key_map.s = {
     \ 'L' : [':Lines'             , 'File Line Search'],
     \ 'l' : [':BLines'            , 'Buffer Line Search'], 
     \ 't' : [':Files'             , 'File Search'], 
-    \ 'T' : [':Explore'             , 'Vim File Explorer'], 
+    \ 'e' : [':Explore'             , 'Vim File Explorer'], 
     \ 'g' : [':Rg'                , 'Line Search'], 
     \ 'B' : [':Buffers'           , 'Buffer Search'],
     \}
@@ -48,14 +48,27 @@ let g:which_key_map.s = {
 " let g:which_key_map['B'] = [':Buffers'           , 'Buffer Search']
 
 let g:which_key_map.b = {
-      \ 'name' : '+buffer' ,
-      \ 'd' : [':bd'        , 'Delete-buffer'],
-      \ '{' : [':bfirst'    , 'First-buffer'],
-      \ '}' : [':blast'     , 'Last-buffer'],
-      \ ']' : [':bnext'     , 'Next-buffer'],
-      \ '[' : [':bprevious' , 'Previous-buffer'],
-      \ }
+    \ 'name' : '+buffer' ,
+    \ 'd' : [':bd'        , 'Delete-buffer'],
+    \ '{' : [':bfirst'    , 'First-buffer'],
+    \ '}' : [':blast'     , 'Last-buffer'],
+    \ ']' : [':bnext'     , 'Next-buffer'],
+    \ '[' : [':bprevious' , 'Previous-buffer'],
+    \ }
 
 let g:which_key_map.c = {
     \ 'name' : '+coc',
+    \ 'r' : ['<Plug>(coc-rename)'                   , 'Rename'],
+    \ 'f' : ['<Plug>(coc-format-selected)'          , 'Format'],
+    \ 's' : ['<Plug>(coc-codeaction-selected)'      , 'Region CodeAction'],
+    \ 'a' : ['<Plug>(coc-codeaction)'               , 'CodeAction'],
+    \ 'd' : [':CocList diagnostics'                 , 'Diagnostics'],
+    \ 'e' : [':CocList extensions'                  , 'List Extensions'],
+    \ 'c' : [':CocList commands'                    , 'List Commands'],
+    \ 'o' : [':CocList outline'                     , 'File Outline'],
+    \ 's' : [':CocList -I symbols'                  , 'Workspace Search'],
+    \ 'j' : [':CocNext'                             , 'Next'],
+    \ 'k' : [':CocPrev'                             , 'Previous'],
+    \ 'p' : [':CocListResume'                       , 'Recent List'],
+    \ 'q' : ['<Plug>(coc-fix-current)'              , 'Quick Fix'],
     \}
