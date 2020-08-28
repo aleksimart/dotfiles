@@ -33,20 +33,34 @@ let g:which_key_map['='] = [ '<C-W>='                             , 'balance win
 " Searching
 let g:which_key_map.s = {
     \ 'name' : '+search',
-    \ 'L' : [':Lines'             , 'File Line Search'],
-    \ 'l' : [':BLines'            , 'Buffer Line Search'], 
-    \ 't' : [':Files'             , 'File Search'], 
-    \ 'e' : [':Explore'             , 'Vim File Explorer'], 
-    \ 'g' : [':Rg'                , 'Line Search'], 
-    \ 'B' : [':Buffers'           , 'Buffer Search'],
+    \ '/' : [':History/'              , '/ Search History'],
+    \ ';' : [':Commands'              , 'Commands'],
+    \ 'a' : [':Ag'                    , 'Text Ag'],
+    \ 'b' : [':Buffers'               , 'Open Buffers'],
+    \ 'c' : [':Commits'               , 'Commits'],
+    \ 'C' : [':BCommits'              , 'Buffer Commits'],
+    \ 'e' : [':Explore'               , 'Vim File Explorer'], 
+    \ 'g' : [':GFiles'                , 'Git Files'],
+    \ 'G' : [':GFiles?'               , 'Nodified Git Files'],
+    \ 'h' : [':History'               , 'File History'],
+    \ 'H' : [':History:'              , 'Command History'],
+    \ 'l' : [':BLines'                , 'Current Buffer Lines'], 
+    \ 'L' : [':Lines'                 , 'Open Buffers Lines'],
+    \ 'm' : [':Marks'                 , 'Marks'] ,
+    \ 'M' : [':Maps'                  , 'Normal Maps'] ,
+    \ 'p' : [':Helptags'              , 'Help Tags'] ,
+    \ 'P' : [':Tags'                  , 'Project Tags'],
+    \ 'r' : [':Rg'                    , 'Text Rg'], 
+    \ 's' : [':CocList snippets'      , 'Snippets'],
+    \ 'S' : [':Colors'                , 'Color Schemes'],
+    \ 't' : [':Files'                 , 'Files'], 
+    \ 'T' : [':BTags'                 , 'Buffer Tags'],
+    \ 'w' : [':Windows'               , 'Search Windows'],
+    \ 'y' : [':Filetypes'             , 'File Types'],
+    \ 'z' : [':FZF'                   , 'FZF'],
     \}
 
-" let g:which_key_map['L'] = [':Lines'             , 'File Line Search']
-" let g:which_key_map['l'] = [':BLines'            , 'Buffer Line Search']
-" let g:which_key_map['t'] = [':Files'             , 'File Search']
-" let g:which_key_map['g'] = [':Rg'                , 'Line Search']
-" let g:which_key_map['B'] = [':Buffers'           , 'Buffer Search']
-
+" Buffers 
 let g:which_key_map.b = {
     \ 'name' : '+buffer' ,
     \ 'd' : [':bd'        , 'Delete-buffer'],
@@ -56,6 +70,7 @@ let g:which_key_map.b = {
     \ '[' : [':bprevious' , 'Previous-buffer'],
     \ }
 
+" Coc Related
 let g:which_key_map.c = {
     \ 'name' : '+coc',
     \ 'r' : ['<Plug>(coc-rename)'                   , 'Rename'],
@@ -66,7 +81,7 @@ let g:which_key_map.c = {
     \ 'e' : [':CocList extensions'                  , 'List Extensions'],
     \ 'c' : [':CocList commands'                    , 'List Commands'],
     \ 'o' : [':CocList outline'                     , 'File Outline'],
-    \ 's' : [':CocList -I symbols'                  , 'Workspace Search'],
+    \ 'w' : [':CocList -I symbols'                  , 'Workspace Search'],
     \ 'j' : [':CocNext'                             , 'Next'],
     \ 'k' : [':CocPrev'                             , 'Previous'],
     \ 'p' : [':CocListResume'                       , 'Recent List'],
