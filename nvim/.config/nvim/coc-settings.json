@@ -70,6 +70,9 @@
   },
 
   // Snippets
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"]
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
   //"snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+
+  // Yaml
+  "yaml.format.enable": true
 }

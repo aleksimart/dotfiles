@@ -7,6 +7,8 @@
 
 " Classic settings
 source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/general/functions.vim
+
 " Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
@@ -32,6 +34,7 @@ source $HOME/.config/nvim/plug-config/vim-rooter.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/markdown-preview.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
 
 " Syntax highlighting enhancements
 source $HOME/.config/nvim/syntax/i3.vim

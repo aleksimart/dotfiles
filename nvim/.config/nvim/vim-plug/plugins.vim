@@ -65,6 +65,9 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     " Markdown realtime preview
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  } 
 
+    " Terminal in vim
+    Plug 'voldikss/vim-floaterm'
+
     call plug#end()
 
 " Automatically install missing plugins on startup
