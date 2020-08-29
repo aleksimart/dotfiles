@@ -5,11 +5,11 @@ All the important dotfiles of my system
 ## TODO
 
 - [x] Configure **_quickscope_**
-- [ ] Configure **_floaterm_**
+- [x] Configure **_floaterm_**
 - [ ] Change from **_rainbow parentheses_** to **_rainbow_**
 - [x] Add java syntax
 - [ ] Learn more about coc-action
-- [ ] Add kitty config to dotfiles
+- [x] Add kitty config to dotfiles
 - [ ] Add fira code installation to _install.sh_
 
 ## BUGS TO FIX
