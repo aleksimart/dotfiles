@@ -179,3 +179,10 @@ let g:which_key_map.t = {
       \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
       \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ }
+
+let g:which_key_map.m = {
+      \ 'name' : '+markdown' ,
+      \ 'p' : ['<Plug>MarkdownPreview'                          , 'Preview'],
+      \ 't' : ['<Plug>MarkdownPreviewToggle'                    , 'Toggle'],
+      \ 's' : ['<Plug>MarkdownPreviewStop'                      , 'Stop'],
+      \ }

@@ -84,6 +84,6 @@ let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 
 " Mappings
-nmap <leader>m <Plug>MarkdownPreview
-nmap <leader>ms <Plug>MarkdownPreviewStop
-nmap <leader>mt <Plug>MarkdownPreviewToggle
+" nmap <leader>m <Plug>MarkdownPreview
+" nmap <leader>ms <Plug>MarkdownPreviewStop
+" nmap <leader>mt <Plug>MarkdownPreviewToggle

@@ -25,9 +25,11 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     " Undotree showing all the previous changes, like git 
     Plug 'mbbill/undotree'
 
-    " Nice start screen and 
+    " Nice start screen and sessions
     Plug 'mhinz/vim-startify'
-    Plug 'yuttie/comfortable-motion.vim' "Sweet stuff for scrolling up and down the file, makes it more smooth
+
+    "Sweet stuff for scrolling up and down the file, makes it more smooth
+    Plug 'yuttie/comfortable-motion.vim' 
 
 
     "Stuff for fuzzy search
@@ -46,7 +48,8 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     Plug 'justinmk/vim-sneak'
     Plug 'unblevable/quick-scope'
 
-    " Some help for me to not to forget the leader functions
+    " Some help for me to not to forget the leader functions and simplify the
+    " mappings
     Plug 'liuchengxu/vim-which-key'
     
     " Git related stuff
@@ -54,12 +57,12 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
-
+    
     " For looks
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'ryanoasis/vim-devicons'
 
-    " Vista
+    " Marks shown on the side
     Plug 'liuchengxu/vista.vim'
 
     " Markdown realtime preview
@@ -68,6 +71,9 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     " Terminal in vim
     Plug 'voldikss/vim-floaterm'
 
+    " A few plugins that I should set up at some point
+    "tpope/vim-eunuch 
+    "tpop/vim-repeat
     call plug#end()
 
 " Automatically install missing plugins on startup
