@@ -1,6 +1,4 @@
 " let g:vista_default_executive = 'coc'
-" Vista key
-nnoremap <leader>V :Vista!!<CR>
 
 let g:vista_fzf_preview = ['right:50%']
 

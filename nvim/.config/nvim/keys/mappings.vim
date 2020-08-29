@@ -15,7 +15,7 @@ inoremap kj <Esc>
 
 " Easy CAPS
 " inoremap <leader>u <ESC>viwUi  " This really slows down the space
-nnoremap <leader>u viwU<Esc>
+" nnoremap <leader>u viwU<Esc>
 
 " TAB in general mode will move to text buffer
 "nnoremap <TAB> :bnext<CR>
