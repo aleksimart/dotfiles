@@ -16,16 +16,16 @@ call plug#begin('~/.config/nvim/autoload/jplugged')
     
     "Themes
     Plug 'morhetz/gruvbox'  "gruvbox theme aka best theme of all time
-    Plug 'sainnhe/gruvbox-material'
-
-    " I still got no clue what are these three for lol
-    Plug 'vim-utils/vim-man'
+    Plug 'sainnhe/gruvbox-material' "Meh, not worth it
 
     " The GOODNESS for autocompletion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'honza/vim-snippets'   " Premade snips
 
+    " Undotree showing all the previous changes, like git 
     Plug 'mbbill/undotree'
+
+    " Nice start screen and 
     Plug 'mhinz/vim-startify'
     Plug 'yuttie/comfortable-motion.vim' "Sweet stuff for scrolling up and down the file, makes it more smooth
 
