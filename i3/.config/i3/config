@@ -208,7 +208,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym Mod1+l exec --no-startup-id blurlock
+bindsym Mod1+Shift+l exec --no-startup-id blurlock
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
