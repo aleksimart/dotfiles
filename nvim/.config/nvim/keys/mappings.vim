@@ -57,3 +57,9 @@ nmap <CR> o<Esc>
 " Tabs
 " nnoremap <A-h> gT
 " nnoremap <A-l> gt
+"
+" Object for a line
+xnoremap il g_o0
+onoremap il :normal vil<CR>
+xnoremap al $o0
+onoremap al :normal val<CR>

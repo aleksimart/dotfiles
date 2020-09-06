@@ -35,8 +35,7 @@ let g:which_key_map['V'] = [':Vista!!'                              , 'Tag Viewe
 let g:which_key_map['W'] = [':call WindowSwap#EasyWindowSwap()'     , 'Move Window' ]
 let g:which_key_map['q'] = [':q'                                    , 'Quit' ]
 let g:which_key_map['w'] = [':w'                                    , 'Write' ]
-let g:which_key_map['/'] = [':let @/ = ""'                         , 'remove search highlight']
-
+let g:which_key_map['/'] = [':let @/ = ""'                          , 'Remove Search Highlight']
 
 " Searching
 let g:which_key_map.s = {
@@ -47,7 +46,7 @@ let g:which_key_map.s = {
     \ 'b' : [':Buffers'               , 'Open Buffers'],
     \ 'c' : [':Commits'               , 'Commits'],
     \ 'C' : [':BCommits'              , 'Buffer Commits'],
-    \ 'e' : [':CocCommand explorer'    , 'Vim File Explorer'], 
+    \ 'e' : [':CocCommand explorer'   , 'Coc Explorer'], 
     \ 'g' : [':GFiles'                , 'Git Files'],
     \ 'G' : [':GFiles?'               , 'Nodified Git Files'],
     \ 'h' : [':History'               , 'File History'],
@@ -185,3 +184,14 @@ let g:which_key_map.m = {
       \ 't' : ['<Plug>MarkdownPreviewToggle'                    , 'Toggle'],
       \ 's' : ['<Plug>MarkdownPreviewStop'                      , 'Stop'],
       \ }
+
+" Vim-surround bindings
+let g:which_key_map.T = {
+      \ 'name' : '+surround' ,
+      \ 'c' : ['<plug>Csurround'                                , 'Change Existing'],
+      \ 'd' : ['<plug>Dsurround'                                , 'Delete Existing'],
+      \ 'i' : ['<plug>Ysurround'                                , 'Insert new'],
+      \ 'a' : ['<plug>Yssurround'                               , 'Insert Around Existing'],
+      \ 'v' : ['<plug>VSurround'                                , 'Insert Around Visual'],
+      \ }
+
