@@ -1,4 +1,3 @@
-" TODO: Configure the better names for all the functions that I use
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
@@ -48,7 +47,7 @@ let g:which_key_map.s = {
     \ 'b' : [':Buffers'               , 'Open Buffers'],
     \ 'c' : [':Commits'               , 'Commits'],
     \ 'C' : [':BCommits'              , 'Buffer Commits'],
-    \ 'e' : [':Explore'               , 'Vim File Explorer'], 
+    \ 'e' : [':CocCommand explorer'    , 'Vim File Explorer'], 
     \ 'g' : [':GFiles'                , 'Git Files'],
     \ 'G' : [':GFiles?'               , 'Nodified Git Files'],
     \ 'h' : [':History'               , 'File History'],
