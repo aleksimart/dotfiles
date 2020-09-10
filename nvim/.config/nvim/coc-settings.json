@@ -107,5 +107,66 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "explorer.file.showHiddenFiles": true
+  "explorer.file.showHiddenFiles": true,
+
+  "diagnostic-languageserver.filetypes": {
+    "go": ["golangci-lint", "golint"],
+    "markdown": ["write-good", "markdownlint"]
+  },
+
+  "diagnostic-languageserver.linters": {
+    "golint": {
+      "command": "golint",
+      "rootPatterns": [],
+      "isStdout": true,
+      "isStderr": false,
+      "debounce": 100,
+      "args": ["%filepath"],
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "sourceName": "golint",
+      "formatLines": 1,
+      "formatPattern": [
+        "^[^:]+:(\\d+):(\\d+):\\s(.*)$",
+        {
+          "line": 1,
+          "column": 2,
+          "message": [3]
+        }
+      ]
+    },
+    "golangci-lint": {
+      "command": "golangci-lint",
+      "rootPatterns": [".git", "go.mod"],
+      "debounce": 100,
+      "args": ["run", "--out-format", "json"],
+      "sourceName": "golangci-lint",
+      "parseJson": {
+        "sourceName": "Pos.Filename",
+        "sourceNameFilter": true,
+        "errorsRoot": "Issues",
+        "line": "Pos.Line",
+        "column": "Pos.Column",
+        "message": "${Text} [${FromLinter}]"
+      }
+    },
+    "markdownlint": {
+      "command": "markdownlint",
+      "isStderr": true,
+      "debounce": 100,
+      "args": ["--stdin"],
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "sourceName": "markdownlint",
+      "formatLines": 1,
+      "formatPattern": [
+        "^.*?:\\s+(\\d+):\\s+(.*)(\\r|\\n)*$",
+        {
+          "line": 1,
+          "column": -1,
+          "message": 2
+        }
+      ]
+    }
+  }
 }
