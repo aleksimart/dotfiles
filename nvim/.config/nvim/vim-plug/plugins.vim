@@ -17,6 +17,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         " Easy motion for VSCode
         Plug 'asvetliakov/vim-easymotion'
     else
+
+        ""Plugin for go"
+        "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
         " Auto pairs for '(' '[' '{'
         Plug 'jiangmiao/auto-pairs'
 
@@ -64,7 +68,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'junegunn/gv.vim'
         
         " For looks
-        Plug 'junegunn/rainbow_parentheses.vim'
+        " Plug 'junegunn/rainbow_parentheses.vim'
         Plug 'ryanoasis/vim-devicons'
 
         " Marks shown on the side
@@ -75,6 +79,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
         " Terminal in vim
         Plug 'voldikss/vim-floaterm'
+
+        " Live HTML/CSS editing
+        Plug 'turbio/bracey.vim' 
+
+        " Formatter for Haskell
+        Plug 'meck/vim-brittany'
     endif
 
     " A few plugins that I should set up at some point

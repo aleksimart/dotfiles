@@ -164,6 +164,14 @@ let g:which_key_map.h = {
       \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'Undo Hunk'],
     \}
 
+"Bracey
+let g:which_key_map.k = {
+      \ 'name' : '+live' ,
+      \ 's' : [':Bracey'            , 'Start Live'],
+      \ 'r' : [':BraceyReload'      , 'Reload Live'],
+      \ 'S' : [':BraceyStop'        , 'Stop Live'],
+      \}
+
 " noremap <leader>tl " Terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,

@@ -66,8 +66,8 @@ exec_always --no-startup-id fix_xcursor
 
 # Sreen brightness controls
 # Please use brightnessctl -get first to check which device is the monitor
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -d "amdgpu_bl1" set +10%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -d "amdgpu_bl1" set 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -d "amdgpu_bl0" set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -d "amdgpu_bl0" set 10%-
 
 #Default movements in the workspace
 bindsym $mod+Left focus left

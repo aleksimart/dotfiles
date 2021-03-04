@@ -1,7 +1,7 @@
 " Set leader key
 let g:mapleader = "\<Space>"
 
-syntax enable                           " Enables syntax highlighing but doesn't work with all the languages
+syntax on                           " Enables syntax highlighing but doesn't work with all the languages
 
 set hidden                              " Required to keep multiple buffers open and doesn't require to save first before switching 
 set nowrap                              " Display long lines as just one line

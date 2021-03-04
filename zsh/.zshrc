@@ -58,6 +58,7 @@ bindkey -v
 ## Alias section 
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
+alias ls="ls --color=auto"
 alias free='free -m'                                            # Show sizes in MB
 alias gitu='git add . && git commit && git push'
 alias git-pretty='git log --pretty=format:"%h - %an, %ar : %s"'
@@ -69,6 +70,9 @@ colors
 
 # enable substitution for prompt
 setopt prompt_subst
+
+# Adding useful configs to path
+PATH="$PATH:$HOME/useful_conf"
 
 # Prompt (on left side) similar to default bash prompt, or redhat zsh prompt with colors
  #PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%}$ "
@@ -206,3 +210,4 @@ esac
 eval $(thefuck --alias)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f "/home/alek_martir/.ghcup/env" ] && source "/home/alek_martir/.ghcup/env" # ghcup-env

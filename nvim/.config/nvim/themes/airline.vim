@@ -12,5 +12,5 @@ let g:airline_right_sep = ''
 
 " Switch to your current theme
 " let g:airline_theme = 'gruvbox'
-let g:airline_theme = 'gruvbox'  "'_material'
+let g:airline_theme = 'gruvbox_material'
 

@@ -19,10 +19,15 @@
     "json",
     "python",
     "java",
-    "go"
+    "go",
+    "c",
+    "xml"
   ],
   "coc.preferences.hoverTarget": "float",
   "coc.preferences.formatOnType": true,
+
+  //html
+  "html.autoClosingTags": true,
 
   // Suggestions
   "suggest.floatEnable": true,
@@ -88,6 +93,18 @@
       "args": ["start"],
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"]
     }
   },
 
@@ -111,7 +128,8 @@
 
   "diagnostic-languageserver.filetypes": {
     "go": ["golangci-lint", "golint"],
-    "markdown": ["write-good", "markdownlint"]
+    "markdown": ["write-good", "markdownlint"],
+    "haskell": ["hlint"]
   },
 
   "diagnostic-languageserver.linters": {
@@ -167,6 +185,25 @@
           "message": 2
         }
       ]
+    },
+    "hlint": {
+      "command": "hlint",
+      "debounce": 100,
+      "args": ["--json", "-"],
+      "sourceName": "hlint",
+      "parseJson": {
+        "line": "startLine",
+        "column": "startColumn",
+        "endLine": "endLine",
+        "endColumn": "endColumn",
+        "message": "${hint}",
+        "security": "severity"
+      },
+      "securities": {
+        "Error": "error",
+        "Warning": "warning",
+        "Suggestion": "info"
+      }
     }
   }
 }
